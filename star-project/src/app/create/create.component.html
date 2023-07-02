@@ -1,0 +1,8 @@
+<div class="search">
+    <span><b>Search: </b></span>
+    <input type="text" [(ngModel)]="searchValue">
+    <p> You have search for {{searchValue}}</p>
+</div>
+<div [hidden]="hiddenValue" ><p>This website is best for online shopping</p></div>
+<button (click)="closeButton()">X</button>
+<img [src]="source" alt="not-showing">

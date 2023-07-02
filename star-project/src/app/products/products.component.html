@@ -1,0 +1,13 @@
+<div class="table" *ngFor="let item of  personArray">
+    <div [ngStyle]="{backgroundColor:item.name==='Jane Smith'? 'Green':''}">
+    <h3>ID is: {{item.id}}</h3>
+    <p >Name is: {{item.name}}</p>
+    <p>Email is: {{item.email}}</p>
+    <p>Address is: {{item.address}}</p>
+    </div>
+    <div>
+        <button type="button" class="btn btn-primary">Edit</button>
+        <button type="button" class="btn btn-danger">Delete </button>
+    </div>
+
+</div>
